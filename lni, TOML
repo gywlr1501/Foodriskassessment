@@ -1,6 +1,0 @@
-[supabase]
-host = "aws-0-ap-northeast-2.pooler.supabase.com"
-port = 6543
-dbname = "postgres"
-user = "postgres.fjhicvtnugnzckwxfrsk"
-password = "Lottefoodsafetycenter"
