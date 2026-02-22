@@ -13,7 +13,7 @@ def init_connection():
         dbname=st.secrets["supabase"]["dbname"],
         user=st.secrets["supabase"]["user"],
         password=st.secrets["supabase"]["password"],
-        sslmode="require" # 클라우드 DB는 보안 연결이 필수야!
+        sslmode="require"  # 보안 연결 강제 설정
     )
 def init_db():
     conn = init_connection()
@@ -243,4 +243,5 @@ with tab4:
         st.plotly_chart(fig3, use_container_width=True)
         
     else:
+
         st.info("통계를 낼 데이터가 아직 없습니다. 이슈를 최소 1개 이상 등록해 주세요!")
